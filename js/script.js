@@ -5,21 +5,26 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di
 azzurro ed emetto un messaggio in console con il numero della cella cliccata. */
 
 // quando l'utente preme il pulsante play si genera una griglia 
-/* const playButton = document.querySelector('#play-button');
+const playButton = document.querySelector('#play-button');
 console.log(playButton);
 playButton.addEventListener('click', function() {
     // la griglia diventa visibile aggiungendo una classe
     const mainGrid = document.querySelector('#grid');
     mainGrid.classList.toggle('active');
+    //per 100 volte creare un quadratino e ogni quadratino si aggiunge alla 
+    // griglia grid
+    for(let i = 1; i <= 100; i++) {
+        let newSquare = generateSquare(i);
+        console.log(newSquare);
+        mainGrid.append(newSquare);
+    }
 
-
-}); */
+});
 
 // test function
-const nuovoQuadrato = generateSquare(1);
+//const nuovoQuadrato = generateSquare(1);
 
-//per 100 volte creare un quadratino e ogni quadratino si aggiunge alla 
-// griglia grid
+
 
 // Quando il quadratino viene cliccato si colora di azzurro e
 // viene emesso un messaggio in console con il numero del quadratino cliccato
@@ -36,5 +41,7 @@ function generateSquare(number) {
     const newSquare = document.createElement('div');
     newSquare.classList.add('square');
     newSquare.innerHTML = `<span>${number}</span>`;
-    console.log(newSquare)
+
+    return newSquare;
+    
 }
