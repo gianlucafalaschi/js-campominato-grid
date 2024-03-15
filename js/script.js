@@ -10,7 +10,7 @@ console.log(playButton);
 playButton.addEventListener('click', function() {
     // la griglia diventa visibile aggiungendo una classe
     const mainGrid = document.querySelector('#grid');
-    mainGrid.classList.toggle('active');
+    mainGrid.classList.add('active');
     //per 100 volte creare un quadratino e ogni quadratino si aggiunge alla 
     // griglia grid
     for(let i = 1; i <= 100; i++) {
@@ -18,12 +18,8 @@ playButton.addEventListener('click', function() {
         console.log(newSquare);
         mainGrid.append(newSquare);
     }
-
+    
 });
-
-// test function
-//const nuovoQuadrato = generateSquare(1);
-
 
 
 // Quando il quadratino viene cliccato si colora di azzurro e
@@ -42,6 +38,15 @@ function generateSquare(number) {
     newSquare.classList.add('square');
     newSquare.innerHTML = `<span>${number}</span>`;
 
+    // gestione del click su ogni quadrato
+    // Quando il quadratino viene cliccato si colora di azzurro e
+    // viene emesso un messaggio in console con il numero del quadratino cliccato
+    newSquare.addEventListener('click', function(){
+        this.classList.add('blue');
+        
+    });
+
     return newSquare;
     
 }
+
