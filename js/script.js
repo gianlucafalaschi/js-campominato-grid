@@ -15,6 +15,7 @@ playButton.addEventListener('click', function() {
 
 }); */
 
+// test function
 const nuovoQuadrato = generateSquare(1);
 
 //per 100 volte creare un quadratino e ogni quadratino si aggiunge alla 
