@@ -41,6 +41,29 @@ header {
     width: 5%;
 }
 
+/*---------
+   MAIN
+---------*/
+main {
+    background-color:#7FFFD4;
+    padding: 50px;
+}
+
 #grid {
     width: 600px ;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square {
+    width: calc(100% / 10);
+    height: calc(100% /10);
+    border: 2px solid black;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
