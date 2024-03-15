@@ -6,7 +6,7 @@ azzurro ed emetto un messaggio in console con il numero della cella cliccata. */
 
 // quando l'utente preme il pulsante play si genera una griglia 
 const playButton = document.querySelector('#play-button');
-console.log(playButton);
+//console.log(playButton);
 playButton.addEventListener('click', function() {
     // la griglia diventa visibile aggiungendo una classe
     const mainGrid = document.querySelector('#grid');
@@ -15,7 +15,7 @@ playButton.addEventListener('click', function() {
     // griglia grid
     for(let i = 1; i <= 100; i++) {
         let newSquare = generateSquare(i);
-        console.log(newSquare);
+        //console.log(newSquare);
         mainGrid.append(newSquare);
     }
     
@@ -43,7 +43,7 @@ function generateSquare(number) {
     // viene emesso un messaggio in console con il numero del quadratino cliccato
     newSquare.addEventListener('click', function(){
         this.classList.add('blue');
-        
+        console.log(number);
     });
 
     return newSquare;
