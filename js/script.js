@@ -8,7 +8,9 @@ azzurro ed emetto un messaggio in console con il numero della cella cliccata. */
 const playButton = document.querySelector('#play-button');
 console.log(playButton);
 playButton.addEventListener('click', function() {
-    alert('premuto')
+    // la griglia diventa visibile aggiungendo una classe
+    const mainGrid = document.querySelector('#grid');
+    console.log(mainGrid);
 });
 
 //per 100 volte creare un quadratino e ogni quadratino si aggiunge alla 

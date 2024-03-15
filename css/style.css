@@ -59,6 +59,8 @@ main {
     background-color: bisque;
 }
 
+
+
 .square {
     width: calc(100% / 10);
     height: calc(100% /10);
