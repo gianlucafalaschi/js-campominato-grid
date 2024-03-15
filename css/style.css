@@ -72,3 +72,11 @@ main {
 .square.blue {
     background-color: azure;
 }
+
+/*---------
+   FOOTER
+---------*/
+
+footer {
+    padding: 15px 10px;
+}
