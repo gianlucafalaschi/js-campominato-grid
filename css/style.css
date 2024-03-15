@@ -53,13 +53,16 @@ main {
     width: 600px ;
     height: 600px;
     margin: 0 auto;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     align-content: flex-start;
     background-color: bisque;
 }
 
-
+#grid.active {
+    display: flex;
+  
+}
 
 .square {
     width: calc(100% / 10);
