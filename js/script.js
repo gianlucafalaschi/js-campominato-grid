@@ -10,7 +10,7 @@ console.log(playButton);
 playButton.addEventListener('click', function() {
     // la griglia diventa visibile aggiungendo una classe
     const mainGrid = document.querySelector('#grid');
-    console.log(mainGrid);
+    mainGrid.classList.toggle('active');
 });
 
 //per 100 volte creare un quadratino e ogni quadratino si aggiunge alla 
