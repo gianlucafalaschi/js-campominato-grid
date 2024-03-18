@@ -11,7 +11,7 @@ playButton.addEventListener('click', function() {
     // la griglia diventa visibile aggiungendo una classe
     const mainGrid = document.querySelector('#grid');
     mainGrid.classList.add('active');
-    // svuoto la griglia quando vuene premuto il bottone play
+    // svuoto la griglia quando viene premuto il bottone play
     mainGrid.innerHTML = ''; 
 
     //per 100 volte creare un quadratino e ogni quadratino si aggiunge alla 
